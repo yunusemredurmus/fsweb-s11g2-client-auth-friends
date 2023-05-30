@@ -1,10 +1,13 @@
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import "./App.css";
+import { Login } from "./comp/Login";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Client Auth Projesi: Friends</h1>
-    </div>
+    <Router>
+      <Route exact path="/login" component={Login} />
+    </Router>
   );
 }
 
