@@ -2,7 +2,6 @@ import React, { useState, useEffect, useContext } from "react";
 import { getAll } from "../mocks/data";
 import { useHistory } from "react-router-dom";
 import { LoginContext } from "../context/LoginContext";
-import "./friendlist.css";
 
 function FriendsList() {
   const history = useHistory();
